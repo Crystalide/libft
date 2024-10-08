@@ -3,11 +3,11 @@ SCRS	= srcs/main.c
 
 OBJS	= ${SCRS:.c=.o}
 
-NAME	= rush-02
+NAME	= libft
 
 .c.o:	${CC} -c $< -o ${<:.c=.o}
 
-CC		= gcc -Wall -Wextra -Werror -I includes
+CC		= cc -Wall -Wextra -Werror -I includes
 
 all:		${OBJS}
 			${CC} -o ${NAME} ${OBJS}
@@ -18,5 +18,6 @@ clean:
 fclean:		clean
 			rm -f ${NAME}
 
-.PHONY:		all clean fclean
+re:			fclean all
 
+.PHONY:		all clean fclean re
