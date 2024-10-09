@@ -1,5 +1,5 @@
 
-SCRS	= srcs/main.c
+SCRS	= srcs/ft_*.c
 
 OBJS	= ${SCRS:.c=.o}
 
@@ -7,7 +7,7 @@ NAME	= libft
 
 .c.o:	${CC} -c $< -o ${<:.c=.o}
 
-CC		= cc -Wall -Wextra -Werror -I includes
+CC		= cc -Wall -Wextra -Werror
 
 all:		${OBJS}
 			${CC} -o ${NAME} ${OBJS}

@@ -6,21 +6,23 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:10 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/08 18:00:00 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:54:04 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+// #include <stdio.h>
 
 // int	ft_atoi(const char *str);
 
 // int	main(void)
 // {
 // 	const char	str[] = "   ----+-21474836sbajhe765";
-// 	const char	str1[] = "   -21474836sbajhe765";
+// 	const char	str1[] = "  -21484830sbajhe765";
 
+// 	printf("The converted number is %d.\n", atoi(str));
+// 	printf("The converted number is %d.\n", atoi(str1));
 // 	printf("The converted number is %d.\n", ft_atoi(str));
 // 	printf("The converted number is %d.\n", ft_atoi(str1));
 // 	return (0);
@@ -28,29 +30,29 @@
 
 int	ft_atoi(const char *str)
 {
-	int			sign;
-	long int	number;
+	int		sign;
+	long	number;
 
 	sign = 1;
 	number = 0;
 	while ((*str <= 13 && *str >= 9) || *str == 32)
-	{
 		str++;
-	}
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-			sign = sign * -1;
+			sign = -1;
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		number = (number * 10) + *str - 48;
-		if (number * sign > INT_MAX)
-			return (INT_MAX);
-		if (number * sign < INT_MIN)
-			return (INT_MIN);
-		str++;
+		if (number > (LONG_MAX - (*str - 48)) / 10)
+		{
+			if (sign == 1)
+				return (INT_MAX);
+			else
+				return (INT_MIN);
+		}
+		number = (number * 10) + *str++ - 48;
 	}
 	return (number * sign);
 }

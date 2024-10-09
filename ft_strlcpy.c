@@ -10,3 +10,44 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// #include <stdio.h>
+
+// unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+
+// int	main(void)
+// {
+// 	char	source[] = "HelloWorld";
+// 	char	destination[20];
+
+// 	printf("Source: %s\nDestination: %s\n", source, destination);
+// 	ft_strlcpy(destination, source, 15);
+// 	printf("Source: %s\nDestination: %s\n", source, destination);
+// 	return (0);
+// }
+
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	char	*temp;
+	int		length_src;
+
+	temp = src;
+	length_src = 0;
+	while (*temp != '\0')
+	{
+		length_src++;
+		temp++;
+	}
+	if (size == 0)
+	{
+		return (length_src);
+	}
+	while (size > 1 && *src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+		size--;
+	}
+	*dest = '\0';
+	return (length_src);
+}

@@ -6,19 +6,19 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:20 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/08 17:59:47 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/09 21:06:45 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include <strings.h>
+// #include <stdio.h>
 
 // void	ft_bzero(void *str, size_t n);
 // size_t	ft_strlen(const char *str);
 
 // int	main(void)
 // {
-// 	char	buffer[] = "xxx";
+// 	char	buffer[] = "xxOx";
 // 	int		length = ft_strlen(buffer);
 // 	int		i = 0;
 
