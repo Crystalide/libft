@@ -6,26 +6,27 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:52 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 13:56:07 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:03:26 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <string.h>
+#include <stdio.h>
 
-// char	*ft_strcat(char *dest, char *src);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
-// int	main(void)
-// {
-// 	char	dest[] = "Hello";
-// 	char	src[] = "World";
+int	main(void)
+{
+	char	dest[] = "Hello";
+	char	src[] = "World";
 
-// 	printf("Source: %s\n", dest);
-// 	printf("Destination: %s\n", src);
-// 	printf("Result of concatenation: %s\n", ft_strcat(dest, src));
-// 	return (0);
-// }
+	printf("Source: %s\n", dest);
+	printf("Destination: %s\n", src);
+	printf("Result of concatenation: %s\n", ft_strlcat(dest, src, 10));
+	return (0);
+}
 
-char	*ft_strcat(char *dest, char *src)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	char	*temp;
 

@@ -6,26 +6,27 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:54 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/08 12:33:42 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:03:31 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <string.h>
+#include <stdio.h>
 
-// unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 
-// int	main(void)
-// {
-// 	char	source[] = "HelloWorld";
-// 	char	destination[20];
+int	main(void)
+{
+	char	source[] = "HelloWorld";
+	char	destination[20];
 
-// 	printf("Source: %s\nDestination: %s\n", source, destination);
-// 	ft_strlcpy(destination, source, 15);
-// 	printf("Source: %s\nDestination: %s\n", source, destination);
-// 	return (0);
-// }
+	printf("Source: %s\nDestination: %s\n", source, destination);
+	ft_strlcpy(destination, source, 15);
+	printf("Source: %s\nDestination: %s\n", source, destination);
+	return (0);
+}
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	char	*temp;
 	int		length_src;
