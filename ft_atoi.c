@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:10 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 20:54:04 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:19:04 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_atoi(const char *str)
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		if (number > (LONG_MAX - (*str - 48)) / 10)
+		if (number > (INT_MAX - (*str - 48)) / 10)
 		{
 			if (sign == 1)
 				return (INT_MAX);

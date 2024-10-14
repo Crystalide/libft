@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:20 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 21:06:45 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:52:15 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,7 @@ void	ft_bzero(void *str, size_t n)
 	temp = (unsigned char *)str;
 	while (n-- > 0)
 	{
-		*temp = 0;
-		temp++;
+		*temp++ = 0;
 	}
 }
 

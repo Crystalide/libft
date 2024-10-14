@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:02 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 14:06:22 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:52:57 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,7 @@ void	*ft_memset(void *str, int c, size_t n)
 	temp = (unsigned char *)str;
 	while (n-- > 0)
 	{
-		*temp = (unsigned char) c;
-		temp++;
+		*temp++ = (unsigned char)c;
 	}
 	return (str);
 }

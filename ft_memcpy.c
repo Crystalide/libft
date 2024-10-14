@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:58 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 14:43:01 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/14 17:20:43 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	temp_dest = (unsigned char *)dest;
 	temp_src = (const unsigned char *)src;
 	while (n-- > 0)
-	{
-		*temp_dest = *temp_src;
-		temp_dest++;
-		temp_src++;
-	}
+		*temp_dest++ = *temp_src++;
 	return (dest);
 }
