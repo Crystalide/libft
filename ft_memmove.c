@@ -6,14 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:00 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 18:18:25 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:11:10 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-// #include <stdio.h>
-
-// void	*ft_memmove(void *dest, const void *src, size_t n);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

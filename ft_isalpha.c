@@ -6,13 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:46 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 22:16:43 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:41:23 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-
-// int	ft_isalpha(int c);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

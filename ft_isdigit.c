@@ -6,13 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:50 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 22:04:48 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:41:25 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-
-// int	ft_isdigit(int c);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

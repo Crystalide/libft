@@ -6,14 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:02 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 16:52:57 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:03:35 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-// #include <stdio.h>
-
-// void	*ft_memset(void *str, int c, size_t n);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

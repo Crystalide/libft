@@ -6,14 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:56 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 17:37:09 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 18:10:11 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-// #include <stdio.h>
-
-// int	ft_memcmp(const void *s1, const void *s2, size_t n);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

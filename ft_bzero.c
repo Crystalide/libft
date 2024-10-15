@@ -6,15 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:20 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 16:52:15 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:55:43 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
-// #include <stdio.h>
-
-// void	ft_bzero(void *str, size_t n);
-// size_t	ft_strlen(const char *str);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

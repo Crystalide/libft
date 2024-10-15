@@ -6,15 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:10 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 16:19:04 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:52:03 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <limits.h>
-// #include <stdio.h>
-
-// int	ft_atoi(const char *str);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

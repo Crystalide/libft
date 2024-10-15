@@ -6,13 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:27 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 21:40:03 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:53:05 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-
-// int	ft_isalnum(int c);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {
@@ -35,3 +33,10 @@ int	ft_isalnum(int c)
 		return (0);
 	return (1);
 }
+
+// int	ft_isalnum(int c)
+// {
+// 	if (ft_isalpha(c) || ft_isdigit(c))
+// 		return (1);
+// 	return (0);
+// }

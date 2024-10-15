@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:10:03 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 18:39:38 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 12:53:46 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,15 @@
 
 // int	main(void)
 // {
-// 	char	string[] = "HelloWorld";
+// 	char	str[] = "HelloWorld";
+// 	char	*temp = str;
 
-// 	printf("%s\n", ft_toupper(string));
+// 	while (*temp != '\0')
+// 	{
+// 		*temp = ft_toupper(*temp);
+// 		temp++;
+// 	}
+// 	printf("%s\n", str);
 // 	return (0);
 // }
 

@@ -6,13 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:52 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/09 22:17:25 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:01:51 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-
-// int	ft_isprint(int c);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {

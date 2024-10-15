@@ -6,14 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:58 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/14 17:20:43 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:10:48 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-// #include <stdio.h>
-
-// void	*ft_memcpy(void *dest, const void *src, size_t n);
+#include "../libft/libft.h"
 
 // int	main(void)
 // {
