@@ -6,10 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:55 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/08 18:00:15 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/15 18:24:54 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft/libft.h"
 #include <string.h>
 // #include <stdio.h>
 
