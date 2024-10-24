@@ -6,11 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:14 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/22 14:25:25 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:04:47 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd);
 

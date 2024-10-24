@@ -6,11 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:10 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/22 19:00:00 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:01:13 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+#include "libft.h"
 
 static int	ft_len(int n);
 static char	*ft_itoa_recursion( char *str, int n, int len);
@@ -18,7 +18,7 @@ static char	*ft_itoa_recursion( char *str, int n, int len);
 
 // int	main(void)
 // {
-// 	int		str[] = {42, -42, 0, 123456789, -123456789};
+// 	int		str[] = {42, -42, 0, 123456789, -123456789, INT_MAX, INT_MIN};
 // 	int		size = sizeof(str) / sizeof(str[0]);
 
 // 	ft_print_array(str, size, 0);
@@ -30,6 +30,8 @@ char	*ft_itoa(int n)
 	int		len;
 	char	*str;
 
+	if (n == INT_MIN)
+		return (ft_strdup("-2147483648"));
 	len = ft_len(n);
 	str = malloc(len + 1);
 	if (str == NULL)

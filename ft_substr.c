@@ -6,15 +6,42 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:07:51 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/22 14:20:50 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:01:40 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+#include "libft.h"
 
-char	*ft_substr(char const *str, unsigned int start, size_t len);
+// int	main(void)
+// {
+// 	char	str[] = "HelloWorld";
+// 	char	*substr;
 
-int	main(void)
+// 	substr = ft_substr(str, 5, 4);
+// 	if (substr == NULL)
+// 		printf("Memory not allocated for substring.\n");
+// 	else
+// 		printf("Memory successfully allocated for substring.\n"
+// 			"String: %s\nSubstring: %s\n", str, substr);
+// 	free(substr);
+// 	return (0);
+// }
+
+char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
+	size_t	strlen;
+	char	*substr;
 
+	if (str == NULL)
+		return (NULL);
+	strlen = ft_strlen(str);
+	if (start >= strlen)
+		return (ft_strdup(""));
+	if (len > strlen - start)
+		len = strlen - start;
+	substr = (char *)malloc(len + 1);
+	if (substr == NULL)
+		return (NULL);
+	ft_strlcpy(substr, str + start, len + 1);
+	return (substr);
 }

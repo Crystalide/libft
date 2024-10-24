@@ -6,11 +6,11 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:52 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/17 18:55:45 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:01:36 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+#include "libft.h"
 // #include <bsd/string.h>
 
 // int	main(void)
@@ -20,8 +20,8 @@
 
 // 	printf("Source: %s\n", dest);
 // 	printf("Destination: %s\n", src);
-// 	printf("Result of concatenation: %zu\n", ft_strlcat(dest, src, 10));
-// 	printf("Result of concatenation: %zu\n", strlcat(dest, src, 10));
+// 	printf("Result of concatenation: %zu\n", ft_strlcat(dest, src, 15));
+// 	printf("Result of concatenation: %zu\n", strlcat(dest, src, 15));
 // 	printf("Result of concatenation: %s\n", dest);
 // 	return (0);
 // }
