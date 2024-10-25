@@ -52,8 +52,7 @@ $(DIR_OBJ)%.o : %.c
 	$(CC) -c -o $@ $<
 
 clean:
-			rm -f $(OBJS)
-			# rmdir obj
+			rm -frd $(DIR_OBJ)
 
 fclean:		clean
 			rm -f a.out $(NAME)

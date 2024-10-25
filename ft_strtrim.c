@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:12:08 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/25 14:46:18 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:37:07 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ static int	ft_set(char c, char const *set)
 	while (*set != '\0')
 	{
 		if (*set == c)
-			return 1;
+			return (1);
 		set++;
 	}
-	return 0;
+	return (0);
 }
