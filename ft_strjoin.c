@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:56 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 17:59:24 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:19:44 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2);
-	new_str = (char *)malloc(len + 1);
+	new_str = malloc(len + 1);
 	if (new_str == NULL)
 		return (NULL);
 	ft_strlcpy(new_str, s1, ft_strlen(s1) + 1);

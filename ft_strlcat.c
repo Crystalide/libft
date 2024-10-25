@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:52 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:01:36 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/24 21:31:13 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,35 +16,39 @@
 // int	main(void)
 // {
 // 	char	dest[] = "Hello";
+// 	// char	dest1[] = "Hello";
 // 	char	src[] = "World";
 
 // 	printf("Source: %s\n", dest);
 // 	printf("Destination: %s\n", src);
 // 	printf("Result of concatenation: %zu\n", ft_strlcat(dest, src, 15));
-// 	printf("Result of concatenation: %zu\n", strlcat(dest, src, 15));
+// 	// printf("Result of concatenation: %zu\n", strlcat(dest1, src, 15));
 // 	printf("Result of concatenation: %s\n", dest);
+// 	// printf("Result of concatenation: %s\n", dest1);
 // 	return (0);
 // }
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	dest_length;
-	size_t	src_length;
+	size_t	src_len;
+	size_t	dest_len;
+	size_t	total_len;
 
-	dest_length = 0;
-	src_length = 0;
-	while (dest[dest_length] != '\0')
-		dest_length++;
-	while (src[src_length] != '\0')
-		src_length++;
-	if (size <= dest_length)
-		return (src_length + size);
-	while (*src != '\0' && dest_length < size - 1)
+	src_len = 0;
+	dest_len = 0;
+	while (dest[dest_len] != '\0')
+		dest_len++;
+	while (src[src_len] != '\0')
+		src_len++;
+	total_len = dest_len + src_len;
+	if (size <= dest_len)
+		return (src_len + size);
+	while (*src != '\0' && dest_len < size - 1)
 	{
-		dest[dest_length] = *src;
-		dest_length++;
+		dest[dest_len] = *src;
+		dest_len++;
 		src++;
 	}
-	dest[dest_length] = '\0';
-	return (dest_length + src_length);
+	dest[dest_len] = '\0';
+	return (total_len);
 }

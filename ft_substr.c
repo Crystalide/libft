@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:07:51 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:01:40 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:02:51 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,15 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	size_t	strlen;
 	char	*substr;
 
-	if (str == NULL)
+	if (!str)
 		return (NULL);
 	strlen = ft_strlen(str);
 	if (start >= strlen)
 		return (ft_strdup(""));
 	if (len > strlen - start)
 		len = strlen - start;
-	substr = (char *)malloc(len + 1);
-	if (substr == NULL)
+	substr = malloc(len + 1);
+	if (!substr)
 		return (NULL);
 	ft_strlcpy(substr, str + start, len + 1);
 	return (substr);
