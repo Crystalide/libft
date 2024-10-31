@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:12:08 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/25 15:37:07 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:09:43 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 
 	start = 0;
-	if (!s1 || !set)
-		return (NULL);
 	end = ft_strlen(s1);
 	while (s1[start] != '\0' && ft_set(s1[start], set))
 		start++;
@@ -47,8 +45,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 static int	ft_set(char c, char const *set)
 {
-	if (set == NULL)
-		return (0);
 	while (*set != '\0')
 	{
 		if (*set == c)

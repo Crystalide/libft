@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:43 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:04:47 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:10:52 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 // int	main(void)
 // {
-// 	char	str[] = "HelloWorld";
-// 	char	*test1 = ft_strchr(str, 'H');
+// 	char	str[] = "teste";
+// 	char	*test1 = ft_strchr(str, '\0');
 
-// 	if (test1 != NULL)
-// 		printf("Found char at position: %ld\n", test1 - str);
-// 	else
-// 		printf("Char not found in string\n");
+// 	// if (test1 != NULL)
+// 	// 	printf("Found char at position: %ld\n", test1 - str);
+// 	// else
+// 	// 	printf("Char not found in string\n");
+// 	printf("Found char at position: %p\n", (void *)str);
+// 	printf("Found char at position: %p\n", (void *)test1);
+// 	printf("Found char at position: %ld\n", test1 - str);
 // 	return (0);
 // }
 
@@ -28,11 +31,11 @@ char	*ft_strchr(const char *str, int c)
 {
 	while (*str != '\0')
 	{
-		if (*str == (char)c)
+		if (*str == (unsigned char)c)
 			return ((char *)str);
 		str++;
 	}
-	if (c == '\0')
+	if ((unsigned char) c == '\0')
 		return ((char *)str);
 	return (NULL);
 }

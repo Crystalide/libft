@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:47 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:01:22 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:36:40 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ char	*ft_strdup(const char *str)
 	size_t	len;
 	char	*duplicate;
 
-	if (str == NULL)
-		return (NULL);
 	len = ft_strlen(str);
 	duplicate = malloc(len + 1);
 	if (duplicate != NULL)

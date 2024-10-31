@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:58 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:04:47 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:58:42 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 
 // 	printf("Source: %s\nDestination: %s\n", src, dest);
 // 	ft_memcpy(dest, src, 15);
+//	memcpy(NULL, NULL, 5);
 // 	printf("Source: %s\nDestination: %s\n", src, dest);
 // 	return (0);
 // }

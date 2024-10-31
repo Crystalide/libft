@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:10:12 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/22 15:55:44 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 12:47:44 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,13 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *str, unsigned int start, size_t len);
+
+// Bonus
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 #endif

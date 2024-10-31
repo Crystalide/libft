@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:07:51 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/25 14:02:51 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:09:14 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	size_t	strlen;
 	char	*substr;
 
-	if (!str)
-		return (NULL);
 	strlen = ft_strlen(str);
 	if (start >= strlen)
 		return (ft_strdup(""));

@@ -6,15 +6,27 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:41 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:01:19 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 12:49:47 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <fcntl.h>
 
-void	ft_putstr_fd(char *str, int fd);
+// int	main(void)
+// {
+// 	char	str[] = "HelloWorld";
+// 	int		fd;
 
-int	main(void)
+// 	fd = open("str.txt", O_RDWR | O_CREAT, 0644);
+// 	if (fd == -1)
+// 		return (1);
+// 	ft_putstr_fd(str, fd);
+// 	close(fd);
+// 	return (0);
+// }
+
+void	ft_putstr_fd(char *str, int fd)
 {
-
+	write(fd, str, ft_strlen(str));
 }

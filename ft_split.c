@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:46 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/25 18:59:04 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:10:55 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	fill_str(char **split_str, const char *str, char delimiter);
 
 // int	main(void)
 // {
-// 	char	*str = "123Hello 123";
+// 	char	*str = " asdas ";
 // 	// char	*str = NULL;
 // 	if (str == NULL || *str == '\0')
 // 	{
@@ -120,10 +120,9 @@ static int	fill_str(char **split_str, const char *str, char delimiter)
 // 	{
 // 		printf("Memory successfully allocated.\n"
 // 			"Before split: %s\nAfter split: ", str[i]);
+// 		free(test1[i]);
 // 		if (test1[0] != NULL)
-// 		{
 // 			printf("%s\n", test1[0]);
-// 		}
 // 	}
 // 	free(test1);
 // 	ft_print_array(str, size, i + 1);
