@@ -6,11 +6,21 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:23 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:04:47 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/11/04 16:37:45 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_calloc(size_t count, size_t size);
+// allocates memory for an array of count elements each of size bytes and initializes all bytes to zero.
+
+// It performs the following steps:
+// Checks for potential overflow in the allocation size calculation.
+// Allocates memory using malloc.
+// Checks if the memory allocation was successful.
+// Initializes the allocated memory to zero using ft_bzero.
+// Returns a pointer to the allocated memory, or NULL if any step fails.
 
 // int	main(void)
 // {

@@ -6,12 +6,15 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:38 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/28 20:46:26 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:51:40 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 // #include <fcntl.h>
+
+void	ft_putnbr_fd(int n, int fd);
+// outputs an integer to a specified file descriptor.
 
 // int	main(void)
 // {

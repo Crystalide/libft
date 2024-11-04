@@ -6,12 +6,19 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:52 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 21:31:13 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 18:12:30 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 // #include <bsd/string.h>
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
+// Concatenate two strings with size limiting.
+
+// appends the string src to the end of dest,
+// ensuring that dest does not exceed a specified size, size, and always ends with a null terminator.
+// It returns the total length the concatenated string would have if size were large enough.
 
 // int	main(void)
 // {
@@ -34,13 +41,9 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	dest_len;
 	size_t	total_len;
 
-	src_len = 0;
-	dest_len = 0;
-	while (dest[dest_len] != '\0')
-		dest_len++;
-	while (src[src_len] != '\0')
-		src_len++;
-	total_len = dest_len + src_len;
+	src_len = ft_strlen(src);
+	dest_len = ft_strlen(dest);
+	total_len = dest_len + src_len;	// represents the length the string would have if size were large enough.
 	if (size <= dest_len)
 		return (src_len + size);
 	while (*src != '\0' && dest_len < size - 1)

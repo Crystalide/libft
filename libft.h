@@ -6,7 +6,7 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:10:12 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/31 12:47:44 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:40:12 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,6 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+t_list	*ft_lstnew(void *content);
 
 #endif

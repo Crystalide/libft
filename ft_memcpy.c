@@ -6,11 +6,19 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:58 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/28 19:58:42 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:33:45 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+// copies a specified number of bytes from one memory location to another.
+
+// initializes pointers to the destination and source memory blocks as unsigned char* and const unsigned char*, respectively, for byte-level access.
+// It iterates through the specified number of bytes (n), copying each byte from the source to the destination.
+// It returns the original destination pointer after the copying is complete.
+// This function is widely used in C programming for copying data from one memory location to another, such as in handling strings, arrays, or binary data.
 
 // int	main(void)
 // {

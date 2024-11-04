@@ -6,11 +6,19 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:02 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 18:04:47 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:50:01 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_memset(void *str, int c, size_t n);
+// fills a block of memory with a specified value.
+
+//initializes a pointer to the memory block as unsigned char* for byte-level access.
+// It iterates through the specified number of bytes (n), setting each byte to the value of c.
+// It returns the original pointer to the memory block after the filling is complete.
+// used to initialize memory to a specific value, such as setting an array to zero or a specific character.
 
 // int	main(void)
 // {

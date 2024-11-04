@@ -6,16 +6,33 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:11:46 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/28 20:10:55 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:13:55 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	**ft_split(char const *str, char c);
 static int	count_words(const char *str, char delimiter);
 static char	*get_word(const char **str, char delimiter);
 static int	fill_str(char **split_str, const char *str, char delimiter);
 // void		ft_print_array(char **str, int size, int i);
+
+// splits a string into an array of words based on a specified delimiter.
+
+// ft_split:
+// Checks if the input string is NULL.
+// Counts the number of words using count_words.
+// Allocates memory for the array of words.
+// Calls fill_str to populate the array with words.
+// Returns the array of words.
+
+// count_words:
+// Iterates through the string and counts the words based on the delimiter.
+
+// get_word:
+// Retrieves a word from the string and returns it as a substring
+
 
 // int	main(void)
 // {
@@ -39,8 +56,6 @@ char	**ft_split(char const *str, char delimiter)
 	int		word_count;
 	char	**split_str;
 
-	if (str == NULL)
-		return (NULL);
 	word_count = count_words(str, delimiter);
 	split_str = (char **)malloc((word_count + 1) * sizeof(char *));
 	if (split_str == NULL)
@@ -80,8 +95,12 @@ static char	*get_word(const char **str, char delimiter)
 	while (**str != '\0' && **str != delimiter)
 		(*str)++;
 	return (ft_substr(start, 0, *str - start));
+	// returns a substring from start with length equal to distance from start to current position of *str.
+	// ft_substr is assumed to allocate the necessary memory for this substring.
 }
 
+// fills the split_str array with words from the string.
+// three parameters: split_str (the array to fill), str (the string to split), and delimiter.
 static int	fill_str(char **split_str, const char *str, char delimiter)
 {
 	int	word_index;
@@ -93,8 +112,8 @@ static int	fill_str(char **split_str, const char *str, char delimiter)
 			str++;
 		if (*str != '\0')
 		{
-			split_str[word_index] = get_word(&str, delimiter);
-			if (split_str[word_index] == NULL)
+			split_str[word_index] = get_word(&str, delimiter); // if true, word was found n retrieved from get_word
+			if (split_str[word_index] == NULL)	// error handling during malloc
 			{
 				while (word_index--)
 					free(split_str[word_index]);

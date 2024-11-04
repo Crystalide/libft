@@ -6,11 +6,20 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:08:10 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/24 17:46:19 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:13:35 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int		ft_atoi(const char *str);
+// converts a string to an integer
+
+// Skipping whitespace.
+// Checking for an optional sign.
+// Reading digits while checking for overflow.
+// Constructing the integer value, considering the sign.
+// Returning the final integer value.
 
 // int	main(void)
 // {

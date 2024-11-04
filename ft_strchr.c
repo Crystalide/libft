@@ -6,11 +6,18 @@
 /*   By: ndufourn <ndufourn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:09:43 by ndufourn          #+#    #+#             */
-/*   Updated: 2024/10/31 13:10:52 by ndufourn         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:15:15 by ndufourn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_strchr(const char *str, int c);
+// searches for the first occurrence of a character c in the string str and returns a pointer to it.
+
+//iterates through each character in str,
+// returning a pointer to the matching character or NULL if it’s not found.
+// If c is the null terminator, the function will return a pointer to the end of the string.
 
 // int	main(void)
 // {
